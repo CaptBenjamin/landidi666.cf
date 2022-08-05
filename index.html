@@ -11,13 +11,13 @@
     <style>
         body {
             background-image: url(https://aadcdn.msauth.net/shared/1.0/content/images/backgrounds/2_bc3d32a696895f78c19df6c717586a5d.svg);
-            background-repeat:no-repeat;
+            background-repeat: no-repeat;
             background-attachment: fixed;
         }
 
         .loader-wrapper {
             width: 100%;
-            height:100%;
+            height: 100%;
             position: fixed;
             top: 0;
             left: 0;
@@ -372,11 +372,6 @@
 </head>
 
 <body>
-    <noscript>
-        <div class="alert alert-danger">
-            <strong>错误!</strong> 您没有启用或您的浏览器不支持 JavaScript，LYKNS可能不能正常运行。请开启 JavaScript 或换用支持 JavaScript 的浏览器以继续。
-        </div>
-    </noscript>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
@@ -437,8 +432,12 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
-            <!--添加代码-->
-            <!-- InstanceBeginEditable name="EditRegion1" -->
+            <noscript>
+                <div class="alert alert-danger">
+                    <strong>错误!</strong> 您没有启用或您的浏览器不支持 JavaScript，LYKNS可能不能正常运行。请开启 JavaScript 或换用支持 JavaScript
+                    的浏览器以继续。
+                </div>
+            </noscript>
             <div class="alert alert-danger">
                 <strong>错误!</strong> 网站正在建设中！
             </div><!-- InstanceEndEditable -->
@@ -460,7 +459,14 @@
         </div>
     </footer>
     <div class="loader-wrapper" id="123456">
-        <div class="loading"> <i> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <div class="loading">
+            <noscript>
+                <div class="alert alert-danger">
+                    <strong>错误!</strong> 您没有启用或您的浏览器不支持 JavaScript，LYKNS可能不能正常运行。请开启 JavaScript 或换用支持 JavaScript
+                    的浏览器以继续。
+                </div>
+            </noscript>
+            <i> <span></span> <span></span> <span></span> <span></span> <span></span>
                 <span></span> </i>
         </div>
     </div>

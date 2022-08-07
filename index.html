@@ -9,6 +9,47 @@
     <link href="https://www.lykns.tk/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://www.lykns.tk/js/bootstrap.bundle.min.js"></script>
     <style>
+        .text {
+            display: inline-block;
+            position: relative;
+            font-size: 40px;
+            height: 60px;
+            line-height: 60px;
+            color: #0078d4;
+        }
+
+        .text::after {
+            content: '';
+            position: absolute;
+            right: -10px;
+            top: 5px;
+            height: 50px;
+            width: 3px;
+            background-color: #fff;
+            animation: san 0.5s steps(1) infinite;
+        }
+
+        @keyframes san {
+
+            0%,
+            100% {
+                background-color: #0078d4;
+            }
+
+            50% {
+                background-color: transparent;
+            }
+
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        a:hover {
+            text-decoration: none
+        }
+
         body {
             background-image: url(https://aadcdn.msauth.net/shared/1.0/content/images/backgrounds/2_bc3d32a696895f78c19df6c717586a5d.svg);
             background-repeat: no-repeat;
@@ -50,6 +91,14 @@
             left: calc(50% - 40px);
             width: 80px;
             height: 80px;
+            display: block;
+        }
+
+        .loading p {
+            margin: auto;
+            position: absolute;
+            top: calc(50% + 70px);
+            left: calc(50% - 47px);
             display: block;
         }
 
@@ -440,14 +489,6 @@
             </div><!-- InstanceEndEditable -->
         </main>
     </div>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7258665391908127"
-        crossorigin="anonymous"></script>
-    <!-- ad -->
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7258665391908127" data-ad-slot="7238274616"
-        data-ad-format="auto" data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
 
     <footer class="border-top footer text-muted">
         <div class="container">
@@ -465,6 +506,7 @@
             </noscript>
             <i> <span></span> <span></span> <span></span> <span></span> <span></span>
                 <span></span> </i>
+            <p class="text-white text-center" style="font-size:25px">请稍候...</p>
         </div>
     </div>
 </body>
